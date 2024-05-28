@@ -4,6 +4,7 @@ import Navbar from "@/components/sections/Navbar";
 import Projects from "@/components/sections/Projects";
 import Skills from "@/components/sections/Skills";
 import Contact from "@/components/sections/Contact";
+import Education from "@/components/sections/Education";
 
 export default function Home() {
 	return (
@@ -18,6 +19,7 @@ export default function Home() {
 			<div className="max-w-7xl mx-auto p-5 mt-20">
 				<Skills />
 				<Projects />
+				<Education />
 				<Contact />
 				<Footer />
 			</div>

@@ -84,6 +84,6 @@
 
 /* Define a custom class to remove default input styles */
 .custom-input {
-	@apply bg-transparent outline-none text-gray-300 px-4 py-2 my-2 rounded border border-slate-800 bg-slate-900 mb-5;
+	@apply bg-transparent outline-none text-gray-300 px-4 py-2 my-2 rounded-lg border border-slate-800 bg-slate-900 mb-5;
   }
   
