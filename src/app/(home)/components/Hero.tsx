@@ -1,5 +1,6 @@
 import { MovingBorderBtn } from "@/components/ui/moving-border";
 import Link from "next/link";
+import Title from "./Title";
 
 export default function Hero() {
 	return (
@@ -12,13 +13,7 @@ export default function Hero() {
                     Based in Florida, I&apos;m Fulltack developer passionate about building a modern web applications that users love.
                 </p>
                 <Link href={"mailto:sheeltaskar64@gmail.com"} className="inline-block">
-                    <div className="hover:text-green-400 teansition-all">
-                        <h1 className="text-3xl font-bold ">
-                            Contact Me 📬
-                        </h1>
-                        <div className="w-40 h-2 bg-green-500 rounded-full"></div>
-                        <div className="w-40 h-2 bg-indigo-500 rounded-full translate-x-2 -rotate-1"></div>
-                    </div>
+                    <Title text="Contact Me 📬"></Title>
                 </Link>
             </div>
             <div className="relative">
