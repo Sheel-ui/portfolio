@@ -81,3 +81,9 @@
   border-radius: 50%;
   box-shadow: 0 0 200px 140px rgb(192, 38, 211,0.7)
 }
+
+/* Define a custom class to remove default input styles */
+.custom-input {
+	@apply bg-transparent outline-none text-gray-300 px-4 py-2 my-2 rounded border border-slate-800 bg-slate-900 mb-5;
+  }
+  
