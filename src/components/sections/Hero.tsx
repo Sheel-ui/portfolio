@@ -1,15 +1,17 @@
 import { MovingBorderBtn } from "@/components/ui/moving-border";
 import Link from "next/link";
 import Title from "./Title";
+import { FlipWords } from "../ui/flip-words";
 
 export default function Hero() {
+    const words = ["FullStack.", "Database.", "Web.", "APIs.", "Devops."];
 	return (
 		<div className="min-h-[60vh] flex gap-14 flex-col-reverse lg: gap-0 lg:flex-row items-center justify-between animate-move-up">
 			<div className="space-y-10 text-center lg:text-left">
 				<h1 className="text-3xl lg:text-6xl font-bold">
 					Nice to meet you! 👋 <br />{" "}
 					<span className="underline underline-offset-8 decoration-green-500">
-						I&apos;m Sheel.
+						I&apos;m <FlipWords words={words} />
 					</span>
 				</h1>
 				<p className="md:w-96 text-gray-300">

@@ -19,7 +19,7 @@ export const CardHover = ({
 	return (
 		<div
 			className={cn(
-				"grid grid-cols-3 md:grid-cols-4  lg:grid-cols-5  py-10",
+				"grid grid-cols-3 md:grid-cols-4  lg:grid-cols-3  py-10",
 				className
 			)}
 		>

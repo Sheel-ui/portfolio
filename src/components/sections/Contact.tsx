@@ -8,7 +8,7 @@ export default function Contact() {
 				text="Contact Me 📬"
 				className="flex flex-col items-center justify-center text-center -rotate-6"
 			></Title>
-			<div className="flex mt-10">
+			<div className="flex mt-20">
 				<div className="w-1/2 space-y-5">
 					<p className="text-lg md:w-96 text-gray-300">
 						I&apos;m currently looking for new opportunities, my
