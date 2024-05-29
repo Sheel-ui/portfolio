@@ -4,7 +4,7 @@ import { MacbookScroll } from "../ui/macbook-scroll";
 
 export default function About() {
 	return (
-		<div>
+		<div id="about">
 			<Title
 				text="About Me 👻"
 				className="flex flex-col items-center justify-center text-center rotate-6"

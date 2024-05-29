@@ -58,13 +58,13 @@ export default function Projects() {
 		},
 	];
 	return (
-		<div className="py-10 p-5 sm:p-0">
+		<div id="projects" className="py-10 p-5 sm:p-0">
 			<Title
 				text="Projects 🎨"
 				className="flex flex-col items-center justify-center text-center rotate-6"
 			></Title>
 
-			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 pt-20 gap-6">
+			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 pt-20 gap-6">
 				{projects.map((project) => {
 					return (
 						<Link href={project.link} key={project.title}>

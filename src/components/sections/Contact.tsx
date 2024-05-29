@@ -3,7 +3,7 @@ import Socials from "./Socials";
 
 export default function Contact() {
 	return (
-		<div className="pt-20">
+		<div id="contact" className="pt-20">
 			<Title
 				text="Contact Me 📬"
 				className="flex flex-col items-center justify-center text-center -rotate-6"
