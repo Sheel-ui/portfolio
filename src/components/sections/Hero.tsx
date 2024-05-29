@@ -6,13 +6,13 @@ export default function Hero() {
 	return (
 		<div className="min-h-[60vh] flex gap-14 flex-col-reverse lg: gap-0 lg:flex-row items-center justify-between animate-move-up">
 			<div className="space-y-10 text-center lg:text-left">
-				<h1 className="text-4xl lg:text-7xl font-bold">
+				<h1 className="text-3xl lg:text-6xl font-bold">
 					Nice to meet you! 👋 <br />{" "}
 					<span className="underline underline-offset-8 decoration-green-500">
 						I&apos;m Sheel.
 					</span>
 				</h1>
-				<p className="md:w-96 text-lg text-gray-300">
+				<p className="md:w-96 text-gray-300">
 					Based in Florida, I&apos;m Fulltack developer passionate
 					about building a modern web applications that users love.
 				</p>
@@ -24,7 +24,7 @@ export default function Hero() {
 				</Link>
 			</div>
 			<div className="relative">
-				<div className="size-72 space-y-3 -rotate-[30deg] relative">
+				<div className="size-64 space-y-3 -rotate-[30deg] relative">
 					<div className="flex gap-3 translate-x-8">
 						<div className="size-32 rounded-2xl bg-green-500"></div>
 						<div className="size-32 rounded-full bg-indigo-500"></div>

@@ -19,7 +19,7 @@ export const CardHover = ({
 	return (
 		<div
 			className={cn(
-				"grid grid-cols-2  lg:grid-cols-3  py-10",
+				"grid grid-cols-3 md:grid-cols-4  lg:grid-cols-5  py-10",
 				className
 			)}
 		>
@@ -54,8 +54,8 @@ export const CardHover = ({
 						</AnimatePresence>
 						<div className="rounded-md w-full p-4 overflow-hidden bg-black group-hover:ring-2 ring-green-500 relative z-20 transition-all duration-500">
 							<div className="py-10 z-50 relative space-y-5">
-                                <Icon className="size-8 mx-auto"/>
-								<p className="text-2xl text-center text-gray-300 font-bold">
+                                <Icon className="size-7 mx-auto"/>
+								<p className="text-xl text-center text-gray-300 font-bold">
 									{item.text}
 								</p>
 							</div>

@@ -14,9 +14,10 @@ import {
 	SiPostgresql,
 	SiPython,
 	SiReact,
-	SiSpring,
 	SiSpringboot,
 	SiTypescript,
+    SiTailwindcss,
+    SiCplusplus
 } from "react-icons/si";
 
 export default function Hero() {
@@ -69,7 +70,20 @@ export default function Hero() {
 			text: "Docker",
 			icon: SiDocker,
 		},
+        {
+			text: "Typescript",
+			icon: SiTypescript,
+		},
+        {
+			text: "Tailwind",
+			icon: SiTailwindcss,
+		},
+        {
+            text: "C++",
+            icon: SiCplusplus
+        },
 	];
+    
 	return (
 		<div className="max-w-5xl mx-auto px-8 mt-10">
 			<Title

@@ -26,35 +26,35 @@ export default function Projects() {
 			tech: [SiAngular, SiDocker, SiGit, SiJavascript],
 			link: "https://www.github.com/Sheel-ui",
 			cover: "/b.png",
-			backgound: "bg-green-500",
+			backgound: "border-green-300",
 		},
 		{
 			title: "project1",
 			tech: [SiAngular, SiDocker, SiGit, SiJavascript],
 			link: "https://www.github.com/Sheel-ui",
 			cover: "/a.png",
-			backgound: "bg-indigo-500",
+			backgound: "border-indigo-300",
 		},
 		{
 			title: "project1",
 			tech: [SiAngular, SiDocker, SiGit, SiJavascript],
 			link: "https://www.github.com/Sheel-ui",
 			cover: "/b.png",
-			backgound: "bg-green-500",
+			backgound: "border-green-300",
 		},
 		{
 			title: "project1",
 			tech: [SiAngular, SiDocker, SiGit, SiJavascript],
 			link: "https://www.github.com/Sheel-ui",
 			cover: "/a.png",
-			backgound: "bg-indigo-500",
+			backgound: "border-indigo-300",
 		},
 		{
 			title: "project1",
 			tech: [SiAngular, SiDocker, SiGit, SiJavascript],
 			link: "https://www.github.com/Sheel-ui",
 			cover: "/b.png",
-			backgound: "bg-green-500",
+			backgound: "border-green-300",
 		},
 	];
 	return (
@@ -64,14 +64,14 @@ export default function Projects() {
 				className="flex flex-col items-center justify-center text-center rotate-6"
 			></Title>
 
-			<div className="grid grid-cols-1 sm:grid-cols-2 pt-20 gap-5">
+			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 pt-20 gap-6">
 				{projects.map((project) => {
 					return (
 						<Link href={project.link} key={project.title}>
 							<div
 								className={cn(
-									"p-5 rounded-md",
-									project.backgound
+									`border-2 rounded-md ${project.backgound}`,
+                                    "bg-black"
 								)}
 							>
 								<DirectionHover
