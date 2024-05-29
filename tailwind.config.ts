@@ -67,26 +67,26 @@ const config = {
 				sm: "calc(var(--radius) - 4px)",
 			},
 			keyframes: {
-        "move-up": {
-          from: {
-            transform: "translateY(10px)",
-            opacity: "0",
-          },
-          to: {
-            transform: "translateY(0px)",
-            opacity: "1"
-          }
-        },
-        "move-down": {
-          from: {
-            transform: "translateY(-10px)",
-            opacity: "0",
-          },
-          to: {
-            transform: "translateY(0px)",
-            opacity: "1"
-          }
-        },
+				"move-up": {
+					from: {
+						transform: "translateY(10px)",
+						opacity: "0",
+					},
+					to: {
+						transform: "translateY(0px)",
+						opacity: "1",
+					},
+				},
+				"move-down": {
+					from: {
+						transform: "translateY(-10px)",
+						opacity: "0",
+					},
+					to: {
+						transform: "translateY(0px)",
+						opacity: "1",
+					},
+				},
 				"accordion-down": {
 					from: { height: "0" },
 					to: { height: "var(--radix-accordion-content-height)" },
@@ -95,12 +95,24 @@ const config = {
 					from: { height: "var(--radix-accordion-content-height)" },
 					to: { height: "0" },
 				},
+				"meteor": {
+					"0%": {
+						transform: "rotate(215deg) translateX(0)",
+						opacity: "1",
+					},
+					"70%": { opacity: "1" },
+					"100%": {
+						transform: "rotate(215deg) translateX(-500px)",
+						opacity: "0",
+					},
+				},
 			},
 			animation: {
 				"accordion-down": "accordion-down 0.2s ease-out",
 				"accordion-up": "accordion-up 0.2s ease-out",
-        "move-up": "move-up 3s linear forwards",
-        "move-down": "move-down 3s linear forwards",
+				"move-up": "move-up 3s linear forwards",
+				"move-down": "move-down 3s linear forwards",
+				"meteor-effect": "meteor 5s linear infinite",
 			},
 		},
 	},

@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import { MotionValue, motion, useScroll, useTransform } from "framer-motion";
+import { Meteors } from "./meteor";
 import { cn } from "@/lib/utils";
 import {
 	IconBrightnessDown,
@@ -110,10 +111,8 @@ export const MacbookScroll = ({
 				{showGradient && (
 					<div className="h-40 w-full absolute bottom-0 inset-x-0 bg-gradient-to-t dark:from-black from-white via-white dark:via-black to-transparent z-50"></div>
 				)}
-				{badge && (
-					<div className="absolute bottom-4 left-4">{badge}</div>
-				)}
 			</div>
+			<div className="h-10 xl:h-16 bg-gradient-to-t from-black absolute -bottom-5 left-0 xl:bottom-0 w-full "></div>
 		</div>
 	);
 };
@@ -147,8 +146,7 @@ export const Lid = ({
 						boxShadow: "0px 2px 0px 2px var(--neutral-900) inset",
 					}}
 					className="absolute inset-0 bg-[#010101] rounded-lg flex items-center justify-center"
-				>
-				</div>
+				></div>
 			</div>
 			<motion.div
 				style={{
@@ -161,7 +159,49 @@ export const Lid = ({
 				}}
 				className="h-96 w-[32rem] absolute inset-0 bg-[#010101] rounded-2xl p-2"
 			>
-				<div className="absolute inset-0 bg-[#272729] rounded-lg"></div>
+				<div className="absolute inset-0 bg-[#272729] rounded-lg">
+					<div className="">
+						<div className=" w-full relative">
+							<div className="absolute inset-0 h-full w-full  transform scale-[0.80]" />
+							<div className="relative shadow-xl bg-gray-900 px-4 py-8 h-[390px] overflow-hidden rounded-lg flex flex-col justify-end items-start">
+								<div className="h-5 w-5 rounded-full border flex items-center justify-center mb-4 border-gray-500">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										fill="none"
+										viewBox="0 0 24 24"
+										strokeWidth="1.5"
+										stroke="currentColor"
+										className="h-2 w-2 text-gray-300"
+									>
+										<path
+											strokeLinecap="round"
+											strokeLinejoin="round"
+											d="M4.5 4.5l15 15m0 0V8.25m0 11.25H8.25"
+										/>
+									</svg>
+								</div>
+
+								<h1 className="font-bold text-xl text-white mb-4 relative z-50">
+									Meteors because they&apos;re cool
+								</h1>
+
+								<p className="font-normal text-base text-slate-500 mb-4 relative z-50">
+									I don&apos;t know what to write so I&apos;ll
+									just paste something cool here. One more
+									sentence because lorem ipsum is just
+									unacceptable. Won&apos;t ChatGPT the shit
+									out of this.
+								</p>
+
+								<button className="border px-4 py-1 rounded-lg  border-gray-500 text-gray-300">
+									Explore
+								</button>
+
+								<Meteors number={20} />
+							</div>
+						</div>
+					</div>
+				</div>
 			</motion.div>
 		</div>
 	);
@@ -643,27 +683,6 @@ export const OptionKey = ({ className }: { className: string }) => {
 				width="32"
 				height="32"
 				stroke="none"
-			/>
-		</svg>
-	);
-};
-
-const AceternityLogo = () => {
-	return (
-		<svg
-			width="66"
-			height="65"
-			viewBox="0 0 66 65"
-			fill="none"
-			xmlns="http://www.w3.org/2000/svg"
-			className="h-3 w-3 text-white"
-		>
-			<path
-				d="M8 8.05571C8 8.05571 54.9009 18.1782 57.8687 30.062C60.8365 41.9458 9.05432 57.4696 9.05432 57.4696"
-				stroke="currentColor"
-				strokeWidth="15"
-				strokeMiterlimit="3.86874"
-				strokeLinecap="round"
 			/>
 		</svg>
 	);
