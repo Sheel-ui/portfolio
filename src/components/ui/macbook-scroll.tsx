@@ -163,40 +163,38 @@ export const Lid = ({
 					<div className="">
 						<div className=" w-full relative">
 							<div className="absolute inset-0 h-full w-full  transform scale-[0.80]" />
-							<div className="relative shadow-xl bg-gray-900 px-4 py-8 h-[390px] overflow-hidden rounded-lg flex flex-col justify-end items-start">
-								<div className="h-5 w-5 rounded-full border flex items-center justify-center mb-4 border-gray-500">
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										fill="none"
-										viewBox="0 0 24 24"
-										strokeWidth="1.5"
-										stroke="currentColor"
-										className="h-2 w-2 text-gray-300"
-									>
-										<path
-											strokeLinecap="round"
-											strokeLinejoin="round"
-											d="M4.5 4.5l15 15m0 0V8.25m0 11.25H8.25"
-										/>
-									</svg>
+							<div className="relative shadow-xl bg-gray-900 p-4 h-[390px] overflow-hidden rounded-lg flex flex-col justify-end items-start">
+								<div className="h-full w-full grid grid-rows-2 grid-cols-3 gap-4 p-4">
+									<div className=" rounded-lg flex flex-col justify-center items-center">
+									<Image
+									src="/logo/pic.jpg"
+									width={100}
+									height={100}
+									className="rounded-full border border-slate-400 object-cover"
+									alt="uf"
+								/>
+									</div>
+									<div className=" rounded-lg flex flex-col justify-center items-center">
+										<p className="text-3xl">💡</p>
+										<p className="text-center text-[10px] text-gray-400">I have a passion for solving complex problems and always aim to achieve solutions efficiently and effectively.</p>
+									</div>
+									<div className=" rounded-lg flex flex-col justify-center items-center">
+										<p className="text-3xl">⚙️</p>
+										<p className="text-center text-[10px] text-gray-400">I enjoy creating fullstack applications, relishing each and every stage from development to testing to deployment.</p>
+									</div>
+									<div className=" rounded-lg flex flex-col justify-center items-center">
+										<p className="text-3xl">🏆</p>
+										<p className="text-center text-[10px] text-gray-400">I believe in taking responsibilities leading by example, inspiring and empowering my team to achieve our collective goals.</p>
+									</div>
+									<div className=" rounded-lg flex flex-col justify-center items-center">
+										<p className="text-3xl">⚽</p>
+										<p className="text-center text-[10px] text-gray-400">As a passionate football fan and avid Liverpool FC supporter, playing football brings me immense joy - YNWA!</p>
+									</div>
+									<div className=" rounded-lg flex flex-col justify-center items-center">	
+										<p className="text-3xl">🍲</p>
+										<p className="text-center text-[10px] text-gray-400">My cooking skills are a hit, with my Butter Chicken, Gulab Jamun, and Rice Paper Dumplings being crowd favorites</p>
+									</div>
 								</div>
-
-								<h1 className="font-bold text-xl text-white mb-4 relative z-50">
-									Meteors because they&apos;re cool
-								</h1>
-
-								<p className="font-normal text-base text-slate-500 mb-4 relative z-50">
-									I don&apos;t know what to write so I&apos;ll
-									just paste something cool here. One more
-									sentence because lorem ipsum is just
-									unacceptable. Won&apos;t ChatGPT the shit
-									out of this.
-								</p>
-
-								<button className="border px-4 py-1 rounded-lg  border-gray-500 text-gray-300">
-									Explore
-								</button>
-
 								<Meteors number={20} />
 							</div>
 						</div>
