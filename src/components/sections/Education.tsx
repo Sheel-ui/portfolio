@@ -21,7 +21,7 @@ export default function Education() {
 						>
 							<div className="flex">
 								<Image
-									src="/uf.png"
+									src="/logo/uf.png"
 									width={80}
 									height={80}
 									className="rounded-full border border-slate-400 object-cover"
@@ -53,7 +53,7 @@ export default function Education() {
 						>
 							<div className="flex">
 								<Image
-									src="/lnt.png"
+									src="/logo/lnt.png"
 									width={80}
 									height={80}
 									className="rounded-full border border-slate-400 object-cover"
@@ -104,7 +104,7 @@ export default function Education() {
 						>
 							<div className="flex">
 								<Image
-									src="/rtmnu.png"
+									src="/logo/rtmnu.png"
 									width={80}
 									height={80}
 									className="rounded-full border border-slate-400 object-cover"
@@ -115,7 +115,7 @@ export default function Education() {
 										Shri Ramdeobaba College of Engineering
 									</span>
 									<span>
-										Bachelor of Technology, Information
+										B.Tech, Information
 										Technology
 									</span>
 									<span>GPA: 8.51/10</span>
@@ -168,7 +168,7 @@ export default function Education() {
 						>
 							<div className="flex">
 								<Image
-									src="/lnt.png"
+									src="/logo/lnt.png"
 									width={80}
 									height={80}
 									className="rounded-full border border-slate-400 object-cover"
@@ -216,7 +216,7 @@ export default function Education() {
 						>
 							<div className="flex">
 								<Image
-									src="/bitwise.png"
+									src="/logo/bitwise.png"
 									width={80}
 									height={80}
 									className="rounded-full border border-red-900 object-cover"
