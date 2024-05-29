@@ -31,23 +31,23 @@ export default function Navbar() {
 					<div className="h-96 w-full bg-transparent"></div>
 				</div>
 
-				<div className="relative bg-green-500 rounded-full w-2 mx-8 flex flex-col items-center">
-					<div className="text-xl whitespace-nowrap absolute top-0 transform translate-y-[15px] bg-green-500 w-4 h-2 rounded-full flex items-center justify-center">
+				<div className="relative bg-green-500 rounded-full w-1 mx-8 flex flex-col items-center">
+					<div className="text-xl whitespace-nowrap absolute top-0 transform translate-y-[15px] bg-green-500 w-4 h-1 rounded-full flex items-center justify-center">
 						<span className="translate-x-1/2 px-4">
 							Jan 2023 - Dec 2024
 						</span>
 					</div>
-					<div className="absolute text-xl whitespace-nowrap top-1/4 transform translate-y-[25px] bg-green-500 w-4 h-2 rounded-full flex items-center justify-center">
+					<div className="absolute text-xl whitespace-nowrap top-1/4 transform translate-y-[25px] bg-green-500 w-4 h-1 rounded-full flex items-center justify-center">
 						<span className="-translate-x-1/2 px-4">
 							Jan 2023 - Dec 2024
 						</span>
 					</div>
-					<div className="absolute text-xl whitespace-nowrap top-1/2 transform translate-y-[35px] bg-green-500 w-4 h-2 rounded-full flex items-center justify-center">
+					<div className="absolute text-xl whitespace-nowrap top-1/2 transform translate-y-[35px] bg-green-500 w-4 h-1 rounded-full flex items-center justify-center">
 						<span className="translate-x-1/2 px-4">
 							Jan 2023 - Dec 2024
 						</span>
 					</div>
-					<div className="absolute text-xl whitespace-nowrap top-3/4 transform translate-y-[45px] bg-green-500 w-4 h-2 rounded-full flex items-center justify-center">
+					<div className="absolute text-xl whitespace-nowrap top-3/4 transform translate-y-[45px] bg-green-500 w-4 h-1 rounded-full flex items-center justify-center">
 						<span className="-translate-x-1/2 px-4">
 							Jan 2023 - Dec 2024
 						</span>
