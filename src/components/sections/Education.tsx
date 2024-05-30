@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Education() {
 	return (
-		<div id="education" className="my-16">
+		<div id="education" className="pt-10">
 			<Title
 				text="Education 📚 & Experience 💻"
 				className="flex flex-col items-center justify-center text-center rotate-3"

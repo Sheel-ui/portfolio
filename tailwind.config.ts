@@ -114,6 +114,10 @@ const config = {
 						opacity: "0",
 					},
 				},
+				border: {
+					'0%, 100%': { backgroundPosition: '0% 50%' },
+					'50%': { backgroundPosition: '100% 50%' },
+				  },
 			},
 			animation: {
 				"accordion-down": "accordion-down 0.2s ease-out",
@@ -123,6 +127,7 @@ const config = {
 				"meteor-effect": "meteor 5s linear infinite",
 				wave: "wave 1s infinite",
 				slideInDown: 'slideInDown 0.5s ease-out',
+				border: 'border 10s ease infinite',
 			},
 		},
 	},

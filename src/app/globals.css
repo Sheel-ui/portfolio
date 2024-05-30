@@ -87,3 +87,6 @@
 	@apply bg-transparent outline-none text-gray-300 px-4 py-2 my-2 rounded-lg border border-slate-800 bg-slate-900 mb-5;
   }
   
+.custom-border {
+	@apply animate-border inline-block bg-white bg-gradient-to-r from-green-500 via-purple-500 to-green-500 bg-[length:400%_400%] p-[2px];
+}

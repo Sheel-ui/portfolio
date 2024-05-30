@@ -168,7 +168,7 @@ export default function Projects() {
         },
 	];
 	return (
-		<div id="projects" className="py-10 p-5 sm:p-0">
+		<div id="projects" className="pt-10 px-5 sm:px-0">
 			<Title
 				text="Projects 🎨"
 				className="flex flex-col items-center justify-center text-center rotate-6"

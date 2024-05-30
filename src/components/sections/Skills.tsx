@@ -85,7 +85,7 @@ export default function Hero() {
 	];
     
 	return (
-		<div id="skills" className="max-w-5xl mx-auto px-8 mt-10">
+		<div id="skills" className="max-w-5xl mx-auto px-8 pt-10">
 			<Title
 				text="Skills 🔪"
 				className="flex flex-col items-center justify-center text-center -rotate-6"

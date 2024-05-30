@@ -159,57 +159,57 @@ export const Lid = ({
 					<div className="">
 						<div className=" w-full relative">
 							<div className="absolute inset-0 h-full w-full  transform scale-[0.80]" />
-							<div className="relative shadow-xl p-4 h-[390px] overflow-hidden rounded-lg flex flex-col justify-end items-start bg-[#101010] border border-gray-800">
-								<div className="h-full w-full grid grid-rows-2 grid-cols-2 md:grid-cols-3 gap-4 p-4">
+							<div className="relative shadow-xl py-4 px-24 sm:px-12 md:px-4 h-[390px] overflow-hidden rounded-lg flex flex-col justify-end items-start bg-[#101010] border border-gray-800">
+								<div className="h-full w-full grid grid-rows-2 grid-cols-2 md:grid-cols-3 gap-0 md:gap-4 p-4">
 									<div className=" rounded-lg flex flex-col justify-center items-center">
 										<Image
 											src="/logo/pic.jpg"
 											width={100}
 											height={100}
-											className="rounded-full border border-slate-400 object-cover"
+											className="rounded-full border-2 border-gray-700 object-cover"
 											alt="uf"
 										/>
 									</div>
 									<div className=" rounded-lg flex flex-col justify-center items-center">
 										<p className="text-3xl">💡</p>
-										<p className="text-center text-[10px] text-gray-300">
-											I have a passion for solving complex
-											problems and always aim to achieve
+										<p className="text-center text-[10px] text-gray-300 px-2 md:p-0">
+											I have a passion for <span className="text-orange-300 font-bold">solving complex
+											problems</span> and always aim to achieve
 											solutions efficiently and
 											effectively.
 										</p>
 									</div>
 									<div className=" rounded-lg flex flex-col justify-center items-center">
 										<p className="text-3xl">⚙️</p>
-										<p className="text-center text-[10px] text-gray-300">
-											I enjoy creating fullstack
+										<p className="text-center text-[10px] text-gray-300 px-2 md:p-0">
+											I enjoy building fullstack
 											applications, relishing each and
-											every stage from development to
-											testing to deployment.
+											every stage from <span className="font-bold text-cyan-300">development  </span> to
+											<span className="font-bold text-cyan-300"> testing</span> to <span className="font-bold text-cyan-300">deployment.</span>
 										</p>
 									</div>
 									<div className=" rounded-lg flex flex-col justify-center items-center">
 										<p className="text-3xl">🏆</p>
-										<p className="text-center text-[10px] text-gray-300">
-											I believe in taking responsibilities
-											leading by example, inspiring and
+										<p className="text-center text-[10px] text-gray-300 px-2 md:p-0">
+											I believe in taking responsibilities,
+											<span className="font-bold text-lime-300">leading by example</span>, inspiring and
 											empowering my team to achieve our
 											collective goals.
 										</p>
 									</div>
-									<div className=" rounded-lg flex flex-col justify-center items-center">
+									<div className=" rounded-lg hidden md:flex flex-col justify-center items-center">
 										<p className="text-3xl">⚽</p>
 										<p className="text-center text-[10px] text-gray-300">
-											As a passionate football fan and
+											As a passionate <span className="font-bold text-red-400">football</span> fan and
 											avid Liverpool FC supporter, playing
 											football brings me immense joy -
-											YNWA!
+											<span className="font-bold text-red-400" >YNWA!</span>
 										</p>
 									</div>
-									<div className=" rounded-lg flex flex-col justify-center items-center">
+									<div className="rounded-lg hidden md:flex flex-col justify-center items-center">
 										<p className="text-3xl">🍲</p>
 										<p className="text-center text-[10px] text-gray-300">
-											My cooking skills are a hit, with my
+											My <span className="font-bold text-fuchsia-300">cooking skills are a hit</span>, with my
 											Butter Chicken, Gulab Jamun, and
 											Rice Paper Dumplings being crowd
 											favorites
