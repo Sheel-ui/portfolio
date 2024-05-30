@@ -20,7 +20,7 @@ export default function Home() {
 			<div className="sm:max-w-[95%] md:max-w-[90%] lg:max-w-[85%] xl:max-w-[75%] mx-auto p-5 mt-20">
 				<About />
 				<Skills />
-        <Education />
+        		<Education />
 				<Projects />
 				<Contact />
 				<Footer />

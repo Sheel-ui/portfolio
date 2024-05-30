@@ -67,6 +67,14 @@ const config = {
 				sm: "calc(var(--radius) - 4px)",
 			},
 			keyframes: {
+				slideInDown: {
+					'0%': { transform: 'translateY(-10%)', opacity: '0' },
+					'100%': { transform: 'translateY(0)', opacity: '1' },
+				  },
+				wave: {
+					"0%, 100%": { transform: "rotate(0deg)" },
+					"50%": { transform: "rotate(-10deg)" },
+				},
 				"move-up": {
 					from: {
 						transform: "translateY(10px)",
@@ -95,7 +103,7 @@ const config = {
 					from: { height: "var(--radix-accordion-content-height)" },
 					to: { height: "0" },
 				},
-				"meteor": {
+				meteor: {
 					"0%": {
 						transform: "rotate(215deg) translateX(0)",
 						opacity: "1",
@@ -113,6 +121,8 @@ const config = {
 				"move-up": "move-up 3s linear forwards",
 				"move-down": "move-down 3s linear forwards",
 				"meteor-effect": "meteor 5s linear infinite",
+				wave: "wave 1s infinite",
+				slideInDown: 'slideInDown 0.5s ease-out',
 			},
 		},
 	},
