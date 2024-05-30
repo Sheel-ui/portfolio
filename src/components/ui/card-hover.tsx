@@ -52,10 +52,10 @@ export const CardHover = ({
 								/>
 							)}
 						</AnimatePresence>
-						<div className="rounded-md w-full p-4 overflow-hidden bg-black group-hover:ring-2 ring-green-500 relative z-20 transition-all duration-500">
+						<div className="rounded-md w-full p-0 overflow-hidden bg-black group-hover:ring-2 ring-green-500 relative z-20 transition-all duration-500">
 							<div className="py-10 z-50 relative space-y-5">
-                                <Icon className="size-7 mx-auto"/>
-								<p className="text-xl text-center text-gray-300 font-bold">
+                                <Icon className="size-6 mx-auto"/>
+								<p className="text-md text-center text-gray-300 font-bold">
 									{item.text}
 								</p>
 							</div>

@@ -72,16 +72,12 @@ export const MacbookScroll = ({
 	return (
 		<div
 			ref={ref}
-			className=" min-h-[1100px]  flex flex-col items-center py-0 md:pb-80 justify-start flex-shrink-0 [perspective:800px] transform  scale-75 sm:scale-100"
+			className=" min-h-[1100px]  flex flex-col items-center py-0 md:pb-80 justify-start flex-shrink-0 [perspective:800px] transform  scale-75 sm:scale-90"
 		>
-			{/* <motion.h2
-				style={{
-					translateY: textTransform,
-					opacity: textOpacity,
-				}}
-				className="dark:text-white text-neutral-800 text-3xl font-bold mb-20 text-center"
-			></motion.h2> */}
-	
+			<motion.h2
+				className="dark:text-white text-neutral-800 text-3xl font-bold mb-20 text-center hidden sm:block"
+			>
+			</motion.h2>
 			<Lid
 				src={src}
 				scaleX={scaleX}
@@ -112,7 +108,7 @@ export const MacbookScroll = ({
 					<div className="h-40 w-full absolute bottom-0 inset-x-0 bg-gradient-to-t dark:from-black from-white via-white dark:via-black to-transparent z-50"></div>
 				)}
 			</div>
-			<div className="h-0 sm:h-16 bg-gradient-to-t from-black absolute -bottom-5 left-0 xl:bottom-0 w-full "></div>
+			{/* <div className="h-0 sm:h-16 bg-gradient-to-t from-black absolute -bottom-5 left-0 xl:bottom-0 w-full "></div> */}
 		</div>
 	);
 };
@@ -163,36 +159,61 @@ export const Lid = ({
 					<div className="">
 						<div className=" w-full relative">
 							<div className="absolute inset-0 h-full w-full  transform scale-[0.80]" />
-							<div className="relative shadow-xl bg-gray-900 p-4 h-[390px] overflow-hidden rounded-lg flex flex-col justify-end items-start">
+							<div className="relative shadow-xl p-4 h-[390px] overflow-hidden rounded-lg flex flex-col justify-end items-start bg-[#101010] border border-gray-800">
 								<div className="h-full w-full grid grid-rows-2 grid-cols-2 md:grid-cols-3 gap-4 p-4">
 									<div className=" rounded-lg flex flex-col justify-center items-center">
-									<Image
-									src="/logo/pic.jpg"
-									width={100}
-									height={100}
-									className="rounded-full border border-slate-400 object-cover"
-									alt="uf"
-								/>
+										<Image
+											src="/logo/pic.jpg"
+											width={100}
+											height={100}
+											className="rounded-full border border-slate-400 object-cover"
+											alt="uf"
+										/>
 									</div>
 									<div className=" rounded-lg flex flex-col justify-center items-center">
 										<p className="text-3xl">💡</p>
-										<p className="text-center text-[10px] text-gray-400">I have a passion for solving complex problems and always aim to achieve solutions efficiently and effectively.</p>
+										<p className="text-center text-[10px] text-gray-300">
+											I have a passion for solving complex
+											problems and always aim to achieve
+											solutions efficiently and
+											effectively.
+										</p>
 									</div>
 									<div className=" rounded-lg flex flex-col justify-center items-center">
 										<p className="text-3xl">⚙️</p>
-										<p className="text-center text-[10px] text-gray-400">I enjoy creating fullstack applications, relishing each and every stage from development to testing to deployment.</p>
+										<p className="text-center text-[10px] text-gray-300">
+											I enjoy creating fullstack
+											applications, relishing each and
+											every stage from development to
+											testing to deployment.
+										</p>
 									</div>
 									<div className=" rounded-lg flex flex-col justify-center items-center">
 										<p className="text-3xl">🏆</p>
-										<p className="text-center text-[10px] text-gray-400">I believe in taking responsibilities leading by example, inspiring and empowering my team to achieve our collective goals.</p>
+										<p className="text-center text-[10px] text-gray-300">
+											I believe in taking responsibilities
+											leading by example, inspiring and
+											empowering my team to achieve our
+											collective goals.
+										</p>
 									</div>
 									<div className=" rounded-lg flex flex-col justify-center items-center">
 										<p className="text-3xl">⚽</p>
-										<p className="text-center text-[10px] text-gray-400">As a passionate football fan and avid Liverpool FC supporter, playing football brings me immense joy - YNWA!</p>
+										<p className="text-center text-[10px] text-gray-300">
+											As a passionate football fan and
+											avid Liverpool FC supporter, playing
+											football brings me immense joy -
+											YNWA!
+										</p>
 									</div>
-									<div className=" rounded-lg flex flex-col justify-center items-center">	
+									<div className=" rounded-lg flex flex-col justify-center items-center">
 										<p className="text-3xl">🍲</p>
-										<p className="text-center text-[10px] text-gray-400">My cooking skills are a hit, with my Butter Chicken, Gulab Jamun, and Rice Paper Dumplings being crowd favorites</p>
+										<p className="text-center text-[10px] text-gray-300">
+											My cooking skills are a hit, with my
+											Butter Chicken, Gulab Jamun, and
+											Rice Paper Dumplings being crowd
+											favorites
+										</p>
 									</div>
 								</div>
 								<Meteors number={20} />

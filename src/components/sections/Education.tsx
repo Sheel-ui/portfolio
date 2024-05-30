@@ -14,10 +14,10 @@ export default function Education() {
 				<div className="flex flex-col items-end flex-1 max-w-1/2">
 					<AnimatePresence>
 						<motion.div
-							initial={{ x: -500, opacity: 0 }}
+							initial={{ x: -300, opacity: 0 }}
 							whileInView={{ x: 0, opacity: 1 }}
-							transition={{ duration: 1 }}
-							className="w-full rounded-3xl bg-slate-900 mb-10 p-4"
+							transition={{ duration: 0.5 }}
+							className="w-full rounded-3xl bg-[#101010] border border-gray-800 text-gray-300 mb-10 p-4"
 						>
 							<div className="flex">
 								<Image
@@ -46,10 +46,10 @@ export default function Education() {
 					<div className="h-96 w-full bg-transparent mb-10"></div>
 					<AnimatePresence>
 						<motion.div
-							initial={{ x: -500, opacity: 0 }}
+							initial={{ x: -300, opacity: 0 }}
 							whileInView={{ x: 0, opacity: 1 }}
-							transition={{ duration: 1 }}
-							className="h-96 w-full rounded-3xl bg-slate-900 mb-10 p-4"
+							transition={{ duration: 0.5 }}
+							className="h-96 w-full rounded-3xl bg-[#101010] border border-gray-800 text-gray-300 mb-10 p-4 overflow-y-auto"
 						>
 							<div className="flex">
 								<Image
@@ -97,10 +97,10 @@ export default function Education() {
 					<div className="h-56 w-full bg-transparent"></div>
 					<AnimatePresence>
 						<motion.div
-							initial={{ x: -500, opacity: 0 }}
+							initial={{ x: -300, opacity: 0 }}
 							whileInView={{ x: 0, opacity: 1 }}
-							transition={{ duration: 1 }}
-							className=" w-full rounded-3xl bg-slate-900 mb-10 p-4"
+							transition={{ duration: 0.5 }}
+							className=" w-full rounded-3xl bg-[#101010] border border-gray-800 text-gray-300 mb-10 p-4"
 						>
 							<div className="flex">
 								<Image
@@ -161,10 +161,10 @@ export default function Education() {
 					<div className="h-48 w-full bg-transparent mb-10"></div>
 					<AnimatePresence>
 						<motion.div
-							initial={{ x: 500, opacity: 0 }}
+							initial={{ x: 300, opacity: 0 }}
 							whileInView={{ x: 0, opacity: 1 }}
-							transition={{ duration: 1.5 }}
-							className="h-96 w-full rounded-3xl bg-slate-900 mb-10 p-4"
+							transition={{ duration: 0.5 }}
+							className="h-96 w-full rounded-3xl bg-[#101010] border border-gray-800 text-gray-300 mb-10 p-4 overflow-y-auto"
 						>
 							<div className="flex">
 								<Image
@@ -180,7 +180,7 @@ export default function Education() {
 									<span>Pune, India</span>
 								</div>
 							</div>
-							<div className="mt-4 text-xs text-gray-300">
+							<div className="mt-4 text-xs text-gray-400">
 								• Worked on building automated pipelines for
 								extracting, processing, embedding text data from
 								2 major SDLC platforms. <br />
@@ -209,10 +209,10 @@ export default function Education() {
 					<div className="h-96 w-full bg-transparent mb-10"></div>
 					<AnimatePresence>
 						<motion.div
-							initial={{ x: 500, opacity: 0 }}
+							initial={{ x: 300, opacity: 0 }}
 							whileInView={{ x: 0, opacity: 1 }}
-							transition={{ duration: 1 }}
-							className="w-full rounded-3xl bg-slate-900 p-4"
+							transition={{ duration: 0.5 }}
+							className="w-full rounded-3xl bg-[#101010] border border-gray-800 text-gray-300 p-4"
 						>
 							<div className="flex">
 								<Image

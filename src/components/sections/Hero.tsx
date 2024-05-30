@@ -21,7 +21,7 @@ export default function Hero() {
 					href={"mailto:sheeltaskar64@gmail.com"}
 					className="inline-block"
 				>
-					<Title text="Contact Me"></Title>
+					<Title text="Resume 📃" className="flex flex-col items-center justify-center text-center"></Title>
 				</Link>
 			</div>
 			<div className="relative">

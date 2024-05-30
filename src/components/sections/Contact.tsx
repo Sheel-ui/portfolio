@@ -8,17 +8,19 @@ export default function Contact() {
 				text="Contact Me 📬"
 				className="flex flex-col items-center justify-center text-center -rotate-6"
 			></Title>
-			<div className="flex mt-20">
-				<div className="w-1/2 space-y-5">
-					<p className="text-lg md:w-96 text-gray-300">
+			<div className="flex flex-col lg:flex-row items-center lg:items-start mt-20">
+				<div className="w-2/3 lg:w-1/2 space-y-5">
+					<p className="hidden sm:block text-lg text-gray-300 text-center pb-10 lg:pb-0 lg:w-96 lg:text-left">
 						I&apos;m currently looking for new opportunities, my
 						inbox is always open. Whether you have a question or
 						just want to say hi, Please feel free to reach out to
 						me!
 					</p>
-					<Socials />
+					<div className="hidden lg:block">
+						<Socials />
+					</div>
 				</div>
-				<div className="w-1/2">
+				<div className="w-full sm:w-3/4 md:w-2/3 lg:w-1/2">
 					<form className="flex flex-col">
 						<label htmlFor="name" className="my-1 text-lg">
 							Name
