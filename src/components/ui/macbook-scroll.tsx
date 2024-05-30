@@ -72,16 +72,16 @@ export const MacbookScroll = ({
 	return (
 		<div
 			ref={ref}
-			className=" min-h-[150vh] sm:min-h-[150vh]  flex flex-col items-center py-0 md:pb-80 justify-start flex-shrink-0 [perspective:800px] transform md:scale-100  scale-[0.35] sm:scale-50"
+			className=" min-h-[1100px]  flex flex-col items-center py-0 md:pb-80 justify-start flex-shrink-0 [perspective:800px] transform  scale-75 sm:scale-100"
 		>
-			<motion.h2
+			{/* <motion.h2
 				style={{
 					translateY: textTransform,
 					opacity: textOpacity,
 				}}
 				className="dark:text-white text-neutral-800 text-3xl font-bold mb-20 text-center"
-			></motion.h2>
-			{/* Lid */}
+			></motion.h2> */}
+	
 			<Lid
 				src={src}
 				scaleX={scaleX}
@@ -112,7 +112,7 @@ export const MacbookScroll = ({
 					<div className="h-40 w-full absolute bottom-0 inset-x-0 bg-gradient-to-t dark:from-black from-white via-white dark:via-black to-transparent z-50"></div>
 				)}
 			</div>
-			<div className="h-10 xl:h-16 bg-gradient-to-t from-black absolute -bottom-5 left-0 xl:bottom-0 w-full "></div>
+			<div className="h-0 sm:h-16 bg-gradient-to-t from-black absolute -bottom-5 left-0 xl:bottom-0 w-full "></div>
 		</div>
 	);
 };
@@ -164,7 +164,7 @@ export const Lid = ({
 						<div className=" w-full relative">
 							<div className="absolute inset-0 h-full w-full  transform scale-[0.80]" />
 							<div className="relative shadow-xl bg-gray-900 p-4 h-[390px] overflow-hidden rounded-lg flex flex-col justify-end items-start">
-								<div className="h-full w-full grid grid-rows-2 grid-cols-3 gap-4 p-4">
+								<div className="h-full w-full grid grid-rows-2 grid-cols-2 md:grid-cols-3 gap-4 p-4">
 									<div className=" rounded-lg flex flex-col justify-center items-center">
 									<Image
 									src="/logo/pic.jpg"

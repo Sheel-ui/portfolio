@@ -1,4 +1,3 @@
-import { MovingBorderBtn } from "@/components/ui/moving-border";
 import Link from "next/link";
 import Title from "./Title";
 import { FlipWords } from "../ui/flip-words";
@@ -9,20 +8,20 @@ export default function Hero() {
 	return (
 		<div className="min-h-[60vh] flex gap-14 flex-col-reverse lg: gap-0 lg:flex-row items-center justify-between animate-move-up">
 			<div className="space-y-10 text-center lg:text-left">
-				<h1 className="text-3xl lg:text-6xl font-bold">
+				<h1 className="text-3xl lg:text-6xl font-bold mt-10 lg:mt-0">
 					Nice to meet you! 👋 <br />{" "}
 					<span className="underline underline-offset-8 decoration-green-500">
 						<FlipWords words={words} />
 					</span>
 				</h1>
-				<p className="md:w-3/4 text-md text-gray-300">
+				<p className="lg:w-3/4 text-md text-gray-300">
 					{heroText}
 				</p>
 				<Link
 					href={"mailto:sheeltaskar64@gmail.com"}
 					className="inline-block"
 				>
-					<Title text="Contact Me 📃"></Title>
+					<Title text="Contact Me"></Title>
 				</Link>
 			</div>
 			<div className="relative">
@@ -37,14 +36,6 @@ export default function Hero() {
 					</div>
 					<div className="glow absolute top-[40%] right-1/2 -z-10"></div>
 				</div>
-				{/* <div className="absolute bottom-5 sm:bottom-14 left-0 sm:-left-10">
-					<MovingBorderBtn
-						borderRadius="0.5rem"
-						className="p-3 font-semibold"
-					>
-						<p>🚀 Available for Work</p>
-					</MovingBorderBtn>
-				</div> */}
 			</div>
 		</div>
 	);

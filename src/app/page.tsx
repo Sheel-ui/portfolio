@@ -17,7 +17,7 @@ export default function Home() {
 				</div>
 				<div className="h-10 xl:h-32 bg-gradient-to-t from-black absolute -bottom-5 left-0 xl:bottom-0 w-full "></div>
 			</div>
-			<div className="sm:max-w-[95%] md:max-w-[90%] lg:max-w-[85%] xl:max-w-[75%] mx-auto p-5 mt-20">
+			<div className="sm:max-w-[95%] md:max-w-[90%] lg:max-w-[85%] xl:max-w-[75%] mx-auto p-5">
 				<About />
 				<Skills />
         		<Education />
