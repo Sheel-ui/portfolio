@@ -19,6 +19,7 @@ import {
     SiTailwindcss,
     SiCplusplus
 } from "react-icons/si";
+import { FaJava } from "react-icons/fa6";
 
 export default function Hero() {
 	const skills = [
@@ -32,27 +33,39 @@ export default function Hero() {
 		},
 		{
 			text: "Java",
-			icon: SiSpringboot,
-		},
-		{
-			text: "Anugular",
-			icon: SiAngular,
-		},
-		{
-			text: "Git",
-			icon: SiGit,
-		},
-		{
-			text: "javascript",
-			icon: SiJavascript,
+			icon: FaJava,
 		},
 		{
 			text: "Python",
 			icon: SiPython,
 		},
 		{
+			text: "SpringBoot",
+			icon: SiSpringboot,
+		},
+		{
+			text: "Git",
+			icon: SiGit,
+		},
+		{
+            text: "C++",
+            icon: SiCplusplus
+        },
+		{
+			text: "javascript",
+			icon: SiJavascript,
+		},
+		{
+			text: "Anugular",
+			icon: SiAngular,
+		},
+		{
 			text: "Nextjs",
 			icon: SiNextdotjs,
+		},
+		{
+			text: "Tailwind",
+			icon: SiTailwindcss,
 		},
 		{
 			text: "Postgresql",
@@ -69,19 +82,7 @@ export default function Hero() {
 		{
 			text: "Docker",
 			icon: SiDocker,
-		},
-        {
-			text: "Typescript",
-			icon: SiTypescript,
-		},
-        {
-			text: "Tailwind",
-			icon: SiTailwindcss,
-		},
-        {
-            text: "C++",
-            icon: SiCplusplus
-        },
+		}
 	];
     
 	return (

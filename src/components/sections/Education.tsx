@@ -183,28 +183,28 @@ export default function Education() {
 					</div>
 				</div>
 
-				<div className="hidden md:block relative bg-green-500 rounded-full w-1 mx-8 flex flex-col items-center text-sm">
-					<div className="absolute top-[0.7%]  whitespace-nowrap bg-green-500 w-4 h-1 rounded-full flex items-center justify-center">
+				<div className="hidden md:block relative bg-green-700 rounded-full w-1 mx-8 flex flex-col items-center text-sm">
+					<div className="absolute top-[0.7%]  whitespace-nowrap bg-green-700 w-4 h-1 rounded-full flex items-center justify-center">
 						<span className="translate-x-1/2 px-4">
 							Jan 2023 - Dec 2024
 						</span>
 					</div>
-					<div className="absolute top-[13.5%] -translate-x-3 whitespace-nowrap bg-green-500 w-4 h-1 rounded-full flex items-center justify-center">
+					<div className="absolute top-[13.5%] -translate-x-3 whitespace-nowrap bg-green-700 w-4 h-1 rounded-full flex items-center justify-center">
 						<span className="-translate-x-1/2 px-4">
 							Jan 2022 - Dec 2022
 						</span>
 					</div>
-					<div className="absolute top-[44.3%] whitespace-nowrap bg-green-500 w-4 h-1 rounded-full flex items-center justify-center">
+					<div className="absolute top-[44.3%] whitespace-nowrap bg-green-700 w-4 h-1 rounded-full flex items-center justify-center">
 						<span className="translate-x-1/2 px-4">
 							July 2021 - Jan 2022
 						</span>
 					</div>
-					<div className="absolute top-[74.6%]  -translate-x-3 whitespace-nowrap bg-green-500 w-4 h-1 rounded-full flex items-center justify-center">
+					<div className="absolute top-[74.6%]  -translate-x-3 whitespace-nowrap bg-green-700 w-4 h-1 rounded-full flex items-center justify-center">
 						<span className="-translate-x-1/2 px-4">
 							Jan 2021 - Jul 2021
 						</span>
 					</div>
-					<div className="absolute top-[89.5%] whitespace-nowrap bg-green-500 w-4 h-1 rounded-full flex items-center justify-center">
+					<div className="absolute top-[89.5%] whitespace-nowrap bg-green-700 w-4 h-1 rounded-full flex items-center justify-center">
 						<span className="translate-x-1/2 px-4">
 							Aug 2017 - May 2021
 						</span>
