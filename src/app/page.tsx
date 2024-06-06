@@ -5,7 +5,6 @@ import Projects from "@/components/sections/Projects";
 import Skills from "@/components/sections/Skills";
 import Contact from "@/components/sections/Contact";
 import Education from "@/components/sections/Education";
-import Experience from "@/components/sections/Experience";
 import About from "@/components/sections/About";
 
 export default function Home() {
@@ -21,8 +20,7 @@ export default function Home() {
 			<div className="sm:max-w-[95%] md:max-w-[90%] lg:max-w-[85%] xl:max-w-[75%] mx-auto p-5">
 				<About />
 				<Skills />
-        		<Education />
-				{/* <Experience /> */}
+				<Education />
 				<Projects />
 				<Contact />
 				<Footer />

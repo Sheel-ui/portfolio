@@ -6,14 +6,47 @@ import Socials from "./Socials";
 export default function Contact() {
 	const [result, setResult] = useState("");
 	const [textColor, setTextColor] = useState("");
+
 	const onSubmit = async (event: any) => {
 		event.preventDefault();
-		setResult("Sending....");
-		setTextColor("text-yellow-300");
 
 		const formData = new FormData(event.target);
+		const name = formData.get("name") as string;
+		const email = formData.get("userId") as string;
+		const subject = formData.get("subject") as string;
+
+		if (!name || name.length <= 3) {
+			setResult("Name must be more than 3 characters.");
+			setTextColor("text-red-300");
+			return;
+		}
+
+		const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+		if (!email || !emailRegex.test(email)) {
+			setResult("Enter a valid email address.");
+			setTextColor("text-red-300");
+			return;
+		}
+
+		if (!subject || subject.length <= 3) {
+			setResult("Subject must be more than 3 characters.");
+			setTextColor("text-red-300");
+			return;
+		}
+
+		formData.append("email", "sheeltaskar64@gmail.com");
 		formData.append("access_key", "e81f0069-b955-4918-9e81-2dcac1a4174a");
+		const currentSubject = formData.get("message");
+		formData.set(
+			"message",
+			`${currentSubject}\nFrom: ${formData.get("userId")}`
+		);
+		formData.delete("userId");
+
+		setResult("Sending....");
+		setTextColor("text-yellow-300");
 		console.log(formData);
+
 		const response = await fetch("https://api.web3forms.com/submit", {
 			method: "POST",
 			body: formData,
@@ -23,12 +56,17 @@ export default function Contact() {
 
 		if (data.success) {
 			console.log(data);
-			setResult("Message sent successfully 🍀");
-			setTextColor("text-green-100");
+			setResult(
+				"Message sent successfully. I will try to get back to you as soon as possible."
+			);
+			setTextColor("text-green-300");
 			event.target.reset();
 		} else {
 			console.log("Error", data);
-			setResult(data.message);
+			setResult(
+				"Sorry, something went wrong. I have been notifed the issue. In the mean time, you can try reaching me out on Linkedin."
+			);
+			setTextColor("text-red-300");
 		}
 	};
 
@@ -53,7 +91,7 @@ export default function Contact() {
 				<div className="w-full sm:w-3/4 md:w-2/3 lg:w-1/2">
 					<form className="flex flex-col" onSubmit={onSubmit}>
 						<label htmlFor="name" className="my-1 text-lg">
-							Name
+							Name *
 						</label>
 						<input
 							type="text"
@@ -62,18 +100,18 @@ export default function Contact() {
 							className="custom-input"
 							required
 						/>
-						<label htmlFor="email" className="my-1 text-lg">
-							Email
+						<label htmlFor="userId" className="my-1 text-lg">
+							Your Email *
 						</label>
 						<input
-							type="email"
-							id="email"
-							name="email"
+							type="text"
+							id="userId"
+							name="userId"
 							className="custom-input"
 							required
 						/>
 						<label htmlFor="subject" className="my-1 text-lg">
-							Subject
+							Subject *
 						</label>
 						<input
 							type="text"
@@ -89,9 +127,11 @@ export default function Contact() {
 							id="message"
 							name="message"
 							className="custom-input h-32"
-							required
 						/>
-						<button className="bg-indigo-500 rounded-lg p-2 hover:bg-indigo-700 transition duration-300 mt-4">
+						<button
+							type="submit"
+							className="bg-indigo-500 rounded-lg p-2 hover:bg-indigo-700 transition duration-300 mt-4"
+						>
 							Send Message
 						</button>
 					</form>
