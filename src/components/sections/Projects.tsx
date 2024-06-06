@@ -69,7 +69,7 @@ export default function Projects() {
 			title: "Simplysync",
 			tech: [SiReact, SiJson, SiJavascript],
 			link: "https://github.com/Sheel-ui/SimplySync",
-			cover: "/projects/simplysync.png",
+			cover: "/projects/simply-sync.png",
 			desc: "Platform that streamlines team formation for university projects, ensuring better skill matches and cohesion among students. ",
 			backgound: "border-green-700",
 		},
@@ -153,7 +153,7 @@ export default function Projects() {
 		{
 			title: "House Paint Algorithms",
 			tech: [SiPython, SiMake],
-			link: "House-Painting-Problem",
+			link: "https://github.com/Sheel-ui/House-Painting-Problem",
 			cover: "/projects/greedy.png",
 			desc: "This repository contains a collection of different greedy algorithms designed to solve the house painting problem.",
 			backgound: "border-green-700",

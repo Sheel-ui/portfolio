@@ -18,7 +18,7 @@ export default function Hero() {
 					{heroText}
 				</p>
 				<Link
-					href={"mailto:sheeltaskar64@gmail.com"}
+					href={process.env.RESUME || "" }
 					className="inline-block"
 				>
 					<Title text="Resume 📃" className="flex flex-col items-center justify-center text-center"></Title>
