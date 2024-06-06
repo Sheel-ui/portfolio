@@ -163,12 +163,14 @@ export const Lid = ({
 								<div className="h-full w-full grid grid-rows-2 grid-cols-2 md:grid-cols-3 gap-0 md:gap-4 p-4">
 									<div className=" rounded-lg flex flex-col justify-center items-center">
 										<Image
-											src="/logo/pic.jpg"
+											src="/logo/pic.jpeg"
 											width={100}
 											height={100}
 											className="rounded-full border-2 border-gray-700 object-cover"
 											alt="uf"
 										/>
+										<span className="text-[10px] text-green-500 font-bold mt-1">Sheel Taskar</span>
+										<span className="text-[10px] text-gray-300">MSCS @ UF</span>
 									</div>
 									<div className=" rounded-lg flex flex-col justify-center items-center">
 										<p className="text-3xl">💡</p>
