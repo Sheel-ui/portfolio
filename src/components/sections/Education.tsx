@@ -21,10 +21,20 @@ export default function Education() {
 									alt="uf"
 								/>
 							</div>
-							<div className="ml-4 flex flex-col justify-center text-[13px] lg:text-[15px]">
-								<span>University of Florida</span>
-								<span>Master of Science, Computer Science</span>
-								<span>GPA: 4.0/4.0</span>
+							<div className="ml-4 flex flex-col justify-center">
+								<span className="text-[13px] lg:text-[15px]">
+									University of Florida
+								</span>
+								<span className="text-gray-300 text-[12px] lg:text-[15px]">
+									Master of Science, Computer Science
+								</span>
+								<span className="text-gray-300 text-[12px] lg:text-[15px]">
+									GPA: 4.0/4.0
+									<span className="md:hidden">
+										{" "}
+										• Jan 2023 - Dec 2024
+									</span>{" "}
+								</span>
 							</div>
 						</div>
 						<div className="mt-4 text-[13px] tracking-wide text-gray-400">
@@ -37,7 +47,7 @@ export default function Education() {
 						</div>
 					</div>
 
-					<div className="bg-[#101010] h-[28rem] overflow-y-auto p-4 border-2 border-gray-600 hover:border-green-700 transistion duration-300 md:bg-black md:border-0 rounded-xl">
+					<div className="bg-[#101010] h-56 md:h-[28rem] overflow-y-auto p-4 border-2 border-gray-600 hover:border-green-700 transistion duration-300 md:bg-black md:border-0 rounded-xl">
 						<div className="flex md:hidden">
 							<div className="flex items-center justify-center">
 								<Image
@@ -48,40 +58,72 @@ export default function Education() {
 									alt="lnt"
 								/>
 							</div>
-							<div className="ml-4 flex flex-col justify-center text-[13px] lg:text-[15px]">
-								<span>Senior Software Engineer</span>
-								<span>Larsen & Toubro Infotech</span>
-								<span>Pune, India</span>
+							<div className="ml-4 flex flex-col justify-center">
+								<span className="text-[13px] lg:text-[15px]">
+									Senior Software Engineer
+								</span>
+								<span className="text-gray-300 text-[12px] lg:text-[15px]">
+									Larsen & Toubro Infotech
+								</span>
+								<span className="text-gray-300 text-[12px] lg:text-[15px]">
+									Pune, India{" "}
+									<span className="md:hidden">
+										{" "}
+										• Dec 2021 - Dec 2022
+									</span>
+								</span>
 							</div>
 						</div>
 						<div className="md:hidden mt-4 text-[13px] tracking-wide text-gray-400">
-							Worked on building automated pipelines for
-							extracting, processing, embedding text data from 2
-							major SDLC platforms. <br />
+							Built automated pipelines for extracting and
+							processing data, and generating{" "}
+							<span className="font-bold text-green-500">
+								AI-driven insights
+							</span>{" "}
+							for 2 major SDLC platforms. <br />
 							<br />
-							Developed and deployed 50+ REST APIs to access the
-							ML models, maintained postman collection and
-							documented the APIs. <br />
+							Optimized the APIs by compiling in C, enhanced the
+							model for GPU execution, improved response time by
+							3x, reduced model size by 75%, and increased
+							throughput by 5x, resulting in a{" "}
+							<span className="font-bold text-green-500">
+								high-performance API
+							</span>{" "}
+							for accessing the language model. <br />
 							<br />
-							Implemented ML models for 4 use cases: Text
-							Clustering, Correlation, Summarization and Semantic
-							Search Engine. <br />
+							Implemented{" "}
+							<span className="font-bold text-green-500">
+								CI/CD pipeline
+							</span>{" "}
+							with Docker and Jenkins, reducing deployment time by
+							50% and enhancing deployment frequency by 3x.
 							<br />
-							Written 100+ parsers to parse user queries in
-							natural language, and generated visualizations and
-							insights based on user queries. <br />
 							<br />
-							Trained Huggingface language models on SDLC, and
-							authored pipeline for finetuning the models on
-							continuous data streams. <br />
+							Improved vector search time by 1000% via precomputed
+							indices, yielding a 10x performance gain in{" "}
+							<span className="font-bold text-green-500">
+								end-to-end correlation
+							</span>{" "}
+							service.
 							<br />
-							Skills: Python, Flask, NLP, Angular, Pandas, NLTK,
-							NumPy, Jupyter, Transformers, Spacy, Huggingface,
-							BERT, Docker, Postman.
+							<br />
+							Engaged in developing a Playground UI to access{" "}
+							<span className="font-bold text-green-500">
+								language models
+							</span>{" "}
+							and modify their parameters for 3 different use
+							cases. <br />
+							<br />
+							<span className="font-bold text-green-500">
+								Skills:
+							</span>{" "}
+							Python, Java, Springboot, React, Flask, NLP,
+							Transformers, Spacy, Huggingface, BERT, Docker,
+							Jenkins, Postman.
 						</div>
 					</div>
 
-					<div className="bg-[#101010] h-[28rem] overflow-y-auto p-4 border-2 border-gray-600 hover:border-green-700 transistion duration-300 rounded-xl">
+					<div className="bg-[#101010] h-56 md:h-[28rem] overflow-y-auto p-4 border-2 border-gray-600 hover:border-green-700 transistion duration-300 rounded-xl">
 						<div className="flex">
 							<div className="flex items-center justify-center">
 								<Image
@@ -93,38 +135,65 @@ export default function Education() {
 								/>
 							</div>
 							<div className="ml-4 flex flex-col justify-center text-[13px] lg:text-[15px]">
-								<span>Software Engineer</span>
-								<span>Larsen & Toubro Infotech</span>
-								<span>Pune, India</span>
+								<span className="text-[13px] lg:text-[15px]">
+									Software Engineer
+								</span>
+								<span className="text-gray-300 text-[12px] lg:text-[15px]">
+									Larsen & Toubro Infotech
+								</span>
+								<span className="text-gray-300 text-[12px] lg:text-[15px]">
+									Pune, India{" "}
+									<span className="md:hidden">
+										{" "}
+										• Jun 2021 - Dec 2021
+									</span>
+								</span>
 							</div>
 						</div>
 						<div className="mt-4 text-[13px] tracking-wide text-gray-400">
-							Designed Microservice Architecture, Database Schemas
-							and developed REST APIs, wireframes as well as UI
-							for the application.
+							Designed{" "}
+							<span className="font-bold text-green-500">
+								Microservice Architecture
+							</span>
+							, Database Schemas and developed REST APIs,
+							wireframes as well as UI for the application.
+							<br />
+							<br />
+							Reduced the page load by 30% with{" "}
+							<span className="font-bold text-green-500">
+								Server Side Rendering
+							</span>{" "}
+							resulting in faster load times and a more responsive
+							frontend.
 							<br />
 							<br />
 							Automated Swagger UI generation upon detecting
-							changes in the Git repository, resulting in a 95%
-							reduction in manual efforts.
+							changes in the Git repository, resulting in a 95%{" "}
+							<span className="font-bold text-green-500">
+								reduction in manual efforts.
+							</span>
 							<br />
 							<br />
-							Migrated on-premise application to the Cloud and
-							setup CI/CD Pipeline, leading to a 30% decrease in
-							deployment time.
-							<br />
+							<span className="font-bold text-green-500">
+								Migrated on-premise application
+							</span>{" "}
+							to the Cloud and setup CI/CD Pipeline, leading to a
+							30% decrease in deployment time. <br />
 							<br />
 							Engineered authentication and authorization
 							middleware using Azure AD Single sign-on to
-							implement Rule Based Access Control. <br />
+							implement{" "}
+							<span className="font-bold text-green-500">
+								Role Based Access Control.
+							</span>
 							<br />
-							Managed Logic Apps, Power Virtual Agent, and Power
-							Automate in Azure, resulting in a 20% increase in
-							workflow automation. <br />
 							<br />
-							Skills: Angular, Node, Express, PostgreSQL,
-							Liquibase, Swagger, Azure, Chatbot, Active
-							Directory, OAuth 2.0, Docker, Postman
+							<span className="font-bold text-green-500">
+								Skills:
+							</span>{" "}
+							Angular, Node, Express, PostgreSQL, Liquibase,
+							Swagger, Azure, Jest, Active Directory, OAuth 2.0,
+							Docker, Postman
 						</div>
 					</div>
 
@@ -140,18 +209,41 @@ export default function Education() {
 								/>
 							</div>
 							<div className="ml-4 flex flex-col justify-center text-[13px] lg:text-[15px]">
-								<span>Bitwise Global</span>
-								<span>Software Engineering Intern</span>
-								<span>Pune, India</span>
+								<span className="text-[13px] lg:text-[15px]">
+									Bitwise Global
+								</span>
+								<span className="text-gray-300 text-[12px] lg:text-[15px]">
+									Software Engineering Intern
+								</span>
+								<span className="text-gray-300 text-[12px] lg:text-[15px]">
+									Pune, India{" "}
+									<span className="md:hidden">
+										{" "}
+										• Jan 2021 - Jun 2021
+									</span>
+								</span>
 							</div>
 						</div>
 						<div className="block md:hidden mt-4 text-[13px] tracking-wide text-gray-400">
-							Contributed to Extract, Transform, Load (ETL)
-							operations with Ab Initio and actively participated
-							in cloud migration using AWS. <br /> <br />Engaged
-							in Linux and Shell Scripting tasks, ensuring smooth
-							integration of C++ components within the data
-							processing pipeline.
+							Engaged in ETL operations using Ab Initio and cloud
+							migration utilizing Snowflake for the credit card
+							company{" "}
+							<span className="font-bold text-green-500">
+								Discover.
+							</span>{" "}
+							<br /> <br />
+							Transformed over 10TB of{" "}
+							<span className="font-bold text-green-500">
+								transaction data
+							</span>{" "}
+							and stored the migration records in a database using
+							Java microservices.
+							<br /> <br />
+							<span className="font-bold text-green-500">
+								Skills:
+							</span>{" "}
+							Shell Scripting, Linux, AWS, Snowflake, Java,
+							Springboot, Ab Initio, SQL
 						</div>
 					</div>
 
@@ -167,18 +259,28 @@ export default function Education() {
 								/>
 							</div>
 							<div className="ml-4 flex flex-col justify-center text-[13px] lg:text-[15px]">
-								<span>
+								<span className="text-[13px] lg:text-[15px]">
 									Shri Ramdeobaba College of Engineering
 								</span>
-								<span>B.Tech, Information Technology</span>
-								<span>GPA: 8.51/10</span>
+								<span className="text-gray-300 text-[12px] lg:text-[15px]">
+									B.Tech, Information Technology
+								</span>
+								<span className="text-gray-300 text-[12px] lg:text-[15px]">
+									GPA: 8.51/10
+									<span className="md:hidden">
+										{" "}
+										• Aug 2017 - May 2021
+									</span>
+								</span>
 							</div>
 						</div>
 						<div className="mt-4 text-[13px] tracking-wide text-gray-400">
-							Major Coursework: Data Structures, Algorithms,
-							Object Oriented Programming, Database Systems,
-							Computer Networks, Operating Systems, Cybersecurity,
-							Compilers
+							<span className="font-bold text-green-500">
+								Major Coursework:
+							</span>{" "}
+							Data Structures, Algorithms, Object Oriented
+							Programming, Database Systems, Computer Networks,
+							Operating Systems, Cybersecurity, Compilers
 						</div>
 					</div>
 				</div>
@@ -191,17 +293,17 @@ export default function Education() {
 					</div>
 					<div className="absolute top-[13.5%] -translate-x-3 whitespace-nowrap bg-green-700 w-4 h-1 rounded-full flex items-center justify-center">
 						<span className="-translate-x-1/2 px-4">
-							Jan 2022 - Dec 2022
+							Dec 2021 - Dec 2022
 						</span>
 					</div>
 					<div className="absolute top-[44.3%] whitespace-nowrap bg-green-700 w-4 h-1 rounded-full flex items-center justify-center">
 						<span className="translate-x-1/2 px-4">
-							July 2021 - Jan 2022
+							Jun 2021 - Dec 2021
 						</span>
 					</div>
 					<div className="absolute top-[74.6%]  -translate-x-3 whitespace-nowrap bg-green-700 w-4 h-1 rounded-full flex items-center justify-center">
 						<span className="-translate-x-1/2 px-4">
-							Jan 2021 - Jul 2021
+							Jan 2021 - Jun 2021
 						</span>
 					</div>
 					<div className="absolute top-[89.5%] whitespace-nowrap bg-green-700 w-4 h-1 rounded-full flex items-center justify-center">
@@ -212,8 +314,7 @@ export default function Education() {
 				</div>
 
 				<div className="hidden md:flex flex-col items-end flex-1 max-w-1/2 space-y-5">
-					<div className="h-44">
-					</div>
+					<div className="h-44"></div>
 
 					<div className="bg-[#101010] h-[28rem] overflow-y-auto p-4 border-2 border-gray-600 hover:border-green-700 transistion duration-300 rounded-xl">
 						<div className="flex">
@@ -228,39 +329,64 @@ export default function Education() {
 							</div>
 							<div className="ml-4 flex flex-col justify-center text-[13px] lg:text-[15px]">
 								<span>Senior Software Engineer</span>
-								<span>Larsen & Toubro Infotech</span>
-								<span>Pune, India</span>
+								<span className="text-gray-300">
+									Larsen & Toubro Infotech
+								</span>
+								<span className="text-gray-300">
+									Pune, India
+								</span>
 							</div>
 						</div>
 						<div className="mt-4 text-[13px] tracking-wide text-gray-400">
-							Worked on building automated pipelines for
-							extracting, processing, embedding text data from 2
-							major SDLC platforms. <br />
+							Built automated pipelines for extracting and
+							processing data, and generating{" "}
+							<span className="font-bold text-green-500">
+								AI-driven insights
+							</span>{" "}
+							for 2 major SDLC platforms. <br />
 							<br />
-							Developed and deployed 50+ REST APIs to access the
-							ML models, maintained postman collection and
-							documented the APIs. <br />
+							Optimized the APIs by compiling in C, enhanced the
+							model for GPU execution, improved response time by
+							3x, reduced model size by 75%, and increased
+							throughput by 5x, resulting in a{" "}
+							<span className="font-bold text-green-500">
+								high-performance API
+							</span>{" "}
+							for accessing the language model. <br />
 							<br />
-							Implemented ML models for 4 use cases: Text
-							Clustering, Correlation, Summarization and Semantic
-							Search Engine. <br />
+							Implemented{" "}
+							<span className="font-bold text-green-500">
+								CI/CD pipeline
+							</span>{" "}
+							with Docker and Jenkins, reducing deployment time by
+							50% and enhancing deployment frequency by 3x.
 							<br />
-							Written 100+ parsers to parse user queries in
-							natural language, and generated visualizations and
-							insights based on user queries. <br />
 							<br />
-							Trained Huggingface language models on SDLC, and
-							authored pipeline for finetuning the models on
-							continuous data streams. <br />
+							Improved vector search time by 1000% via precomputed
+							indices, yielding a 10x performance gain in{" "}
+							<span className="font-bold text-green-500">
+								end-to-end correlation
+							</span>{" "}
+							service.
 							<br />
-							Skills: Python, Flask, NLP, Angular, Pandas, NLTK,
-							NumPy, Jupyter, Transformers, Spacy, Huggingface,
-							BERT, Docker, Postman.
+							<br />
+							Engaged in developing a Playground UI to access{" "}
+							<span className="font-bold text-green-500">
+								language models
+							</span>{" "}
+							and modify their parameters for 3 different use
+							cases. <br />
+							<br />
+							<span className="font-bold text-green-500">
+								Skills:
+							</span>{" "}
+							Python, Java, Springboot, React, Flask, NLP,
+							Transformers, Spacy, Huggingface, BERT, Docker,
+							Jenkins, Postman.
 						</div>
 					</div>
 
-					<div className="h-[28rem]">
-					</div>
+					<div className="h-[28rem]"></div>
 
 					<div className="bg-[#101010] overflow-y-auto h-56 p-4 border-2 border-gray-600 hover:border-green-700 transistion duration-300 rounded-xl">
 						<div className="flex">
@@ -275,22 +401,38 @@ export default function Education() {
 							</div>
 							<div className="ml-4 flex flex-col justify-center text-[13px] lg:text-[15px]">
 								<span>Bitwise Global</span>
-								<span>Software Engineering Intern</span>
-								<span>Pune, India</span>
+								<span className="text-gray-300">
+									Software Engineering Intern
+								</span>
+								<span className="text-gray-300">
+									Pune, India
+								</span>
 							</div>
 						</div>
 						<div className="mt-4 text-[13px] tracking-wide text-gray-400">
-							Contributed to Extract, Transform, Load (ETL)
-							operations with Ab Initio and actively participated
-							in cloud migration using AWS. <br /> <br />Engaged
-							in Linux and Shell Scripting tasks, ensuring smooth
-							integration of C++ components within the data
-							processing pipeline.
+							Engaged in ETL operations using Ab Initio and cloud
+							migration utilizing Snowflake for the credit card
+							company{" "}
+							<span className="font-bold text-green-500">
+								Discover.
+							</span>{" "}
+							<br /> <br />
+							Transformed over 10TB of{" "}
+							<span className="font-bold text-green-500">
+								transaction data
+							</span>{" "}
+							and stored the migration records in a database using
+							Java microservices.
+							<br /> <br />
+							<span className="font-bold text-green-500">
+								Skills:
+							</span>{" "}
+							Shell Scripting, Linux, AWS, Snowflake, Java,
+							Springboot, Ab Initio, SQL
 						</div>
 					</div>
 
-					<div className="h-44">
-					</div>
+					<div className="h-44"></div>
 				</div>
 			</div>
 		</div>

@@ -16,8 +16,9 @@ import {
 	SiReact,
 	SiSpringboot,
 	SiTypescript,
-    SiTailwindcss,
-    SiCplusplus
+	SiTailwindcss,
+	SiCplusplus,
+	SiLinux,
 } from "react-icons/si";
 import { FaJava } from "react-icons/fa6";
 
@@ -48,9 +49,9 @@ export default function Hero() {
 			icon: SiGit,
 		},
 		{
-            text: "C++",
-            icon: SiCplusplus
-        },
+			text: "C++",
+			icon: SiCplusplus,
+		},
 		{
 			text: "javascript",
 			icon: SiJavascript,
@@ -82,9 +83,13 @@ export default function Hero() {
 		{
 			text: "Docker",
 			icon: SiDocker,
-		}
+		},
+		{
+			text: "Linux",
+			icon: SiLinux,
+		},
 	];
-    
+
 	return (
 		<div id="skills" className="max-w-5xl mx-auto px-8 pt-10">
 			<Title

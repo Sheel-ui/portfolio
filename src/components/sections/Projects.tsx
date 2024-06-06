@@ -5,12 +5,10 @@ import {
 	SiAngular,
 	SiBootstrap,
 	SiCss3,
-	SiDocker,
 	SiEjs,
 	SiFlask,
 	SiFramer,
 	SiFsharp,
-	SiGit,
 	SiHtml5,
 	SiJavascript,
 	SiJson,
@@ -19,7 +17,6 @@ import {
 	SiNextdotjs,
 	SiNextui,
 	SiNodedotjs,
-	SiPostgresql,
 	SiPrisma,
 	SiPython,
 	SiPytorch,
@@ -27,12 +24,10 @@ import {
 	SiRedis,
 	SiShadcnui,
 	SiSolidity,
-	SiSpring,
-	SiSpringboot,
 	SiTailwindcss,
 	SiTerraform,
 	SiTypescript,
-    SiVisualstudiocode,
+	SiVisualstudiocode,
 } from "react-icons/si";
 import { FaJava } from "react-icons/fa6";
 import { cn } from "@/lib/utils";
@@ -42,20 +37,34 @@ export default function Projects() {
 	const projects = [
 		{
 			title: "CodeShare",
-			tech: [SiNextdotjs, SiNextui, SiTailwindcss, SiTypescript, SiPrisma],
+			tech: [
+				SiNextdotjs,
+				SiNextui,
+				SiTailwindcss,
+				SiTypescript,
+				SiPrisma,
+			],
 			link: "https://github.com/Sheel-ui/codeshare",
 			cover: "/projects/codeshare.jpeg",
 			desc: "Tool that enables developers to effortlessly create, share, edit, and manage code snippets with advanced features like Prisma integration, VS Code editor, dynamic paths, caching, and robust error handling.",
 			backgound: "border-green-700",
-        },
+		},
 		{
 			title: "DevPost",
-			tech: [SiNextdotjs, SiNextui, SiTailwindcss, SiTypescript, SiPrisma, SiShadcnui, SiFramer],
+			tech: [
+				SiNextdotjs,
+				SiNextui,
+				SiTailwindcss,
+				SiTypescript,
+				SiPrisma,
+				SiShadcnui,
+				SiFramer,
+			],
 			link: "https://github.com/Sheel-ui/codeshare",
 			cover: "/projects/devpost.png",
 			desc: "Application that allows users to create topics, posts and comments, and includes features like OAuth authentication, Prisma integration, recursive nested comments, content streaming, request deduplication.",
 			backgound: "border-green-700",
-        },
+		},
 		{
 			title: "Simplysync",
 			tech: [SiReact, SiJson, SiJavascript],
@@ -63,8 +72,8 @@ export default function Projects() {
 			cover: "/projects/simplysync.png",
 			desc: "Platform that streamlines team formation for university projects, ensuring better skill matches and cohesion among students. ",
 			backgound: "border-green-700",
-        },
-        {
+		},
+		{
 			title: "3D Audio Playground",
 			tech: [SiPython],
 			link: "https://github.com/Sheel-ui/3d-audio-playground",
@@ -74,20 +83,34 @@ export default function Projects() {
 		},
 		{
 			title: "Chatwave",
-			tech: [SiReact, SiNodedotjs, SiMongodb, SiAmazonaws, SiRedis, SiTerraform],
+			tech: [
+				SiReact,
+				SiNodedotjs,
+				SiMongodb,
+				SiAmazonaws,
+				SiRedis,
+				SiTerraform,
+			],
 			link: "https://github.com/Sheel-ui/chatwave-backend",
 			cover: "/projects/chatwave.png",
 			desc: "Full Stack social media application featuring user authentication, password management, posts, post reactions, comments, follower and blocking, private messaging, etc.",
 			backgound: "border-green-700",
-        },
+		},
 		{
 			title: "GraphViz",
-			tech: [SiAngular, SiBootstrap, SiPython, SiFlask, SiPytorch, SiTypescript],
+			tech: [
+				SiAngular,
+				SiBootstrap,
+				SiPython,
+				SiFlask,
+				SiPytorch,
+				SiTypescript,
+			],
 			link: "https://github.com/Sheel-ui/graphviz-frontend",
 			cover: "/projects/graph.jpeg",
 			desc: "Upload SQL database files in CSV format via an intuitive frontend and query databases using natural language and dynamically visualize results as bar graphs, line graphs, or tables.",
 			backgound: "border-green-700",
-        },
+		},
 		{
 			title: "Portfolio Website",
 			tech: [SiNodedotjs, SiFramer, SiTypescript, SiShadcnui],
@@ -95,7 +118,7 @@ export default function Projects() {
 			cover: "/projects/portfolio.png",
 			desc: "My personal mobile responsive portfolio website built using React and Nextjs.",
 			backgound: "border-green-700",
-        },
+		},
 		{
 			title: "NoteDown",
 			tech: [SiReact, SiJavascript, SiCss3],
@@ -103,7 +126,7 @@ export default function Projects() {
 			cover: "/projects/note-down.jpeg",
 			desc: "Note-taking solution where users can create, review, and manage notes, with features like dark/light modes and infinite scroll for smooth navigation.",
 			backgound: "border-green-700",
-        },
+		},
 		{
 			title: "Code to Text",
 			tech: [SiPython, SiJavascript, SiVisualstudiocode, SiFlask],
@@ -111,15 +134,22 @@ export default function Projects() {
 			cover: "/projects/code-to-text.png",
 			desc: "A Visual Studio Code extension designed to effortlessly generate informative comments for your code files. ",
 			backgound: "border-green-700",
-        },
+		},
 		{
 			title: "Next Word Prediction",
-			tech: [SiAngular, SiBootstrap, SiPython, SiFlask, SiPytorch, SiTypescript],
+			tech: [
+				SiAngular,
+				SiBootstrap,
+				SiPython,
+				SiFlask,
+				SiPytorch,
+				SiTypescript,
+			],
 			link: "https://github.com/Sheel-ui/next-word-backend",
 			cover: "/projects/next-word.jpeg",
 			desc: "Text auto-completion system designed to enhance user experience across various applications, it anticipates and suggests word sequences as users type.",
 			backgound: "border-green-700",
-        },
+		},
 		{
 			title: "House Paint Algorithms",
 			tech: [SiPython, SiMake],
@@ -127,7 +157,7 @@ export default function Projects() {
 			cover: "/projects/greedy.png",
 			desc: "This repository contains a collection of different greedy algorithms designed to solve the house painting problem.",
 			backgound: "border-green-700",
-        },
+		},
 		{
 			title: "Node Azure Authentication",
 			tech: [SiNodedotjs, SiEjs, SiBootstrap],
@@ -135,7 +165,7 @@ export default function Projects() {
 			cover: "/projects/node.jpeg",
 			desc: "Using passport-azure-ad for authentication using Azure Active directory.",
 			backgound: "border-green-700",
-        },
+		},
 		{
 			title: "Gator-taxi",
 			tech: [FaJava, SiMake],
@@ -143,7 +173,7 @@ export default function Projects() {
 			cover: "/projects/gator-taxi.png",
 			desc: "A ride-sharing solution using a custom min-heap and Red-Black Tree for optimal ride selection, prioritizing cost and duration, with seamless support for insertion, cancellation, and updates.",
 			backgound: "border-green-700",
-        },
+		},
 		{
 			title: "HireAChef",
 			tech: [SiHtml5, SiCss3],
@@ -151,7 +181,7 @@ export default function Projects() {
 			cover: "/projects/hireachef.jpeg",
 			desc: "Mobile responsive design concept with focus on clean, maintainable code using pure CSS.",
 			backgound: "border-green-700",
-        },
+		},
 		{
 			title: "Emergency Access Protocol",
 			tech: [SiSolidity],
@@ -159,7 +189,7 @@ export default function Projects() {
 			cover: "/projects/eap.png",
 			desc: "Emergency access control framework using proof-of-stake to securely grant healthcare organizations immediate access to patients' EMRs in emergencies.",
 			backgound: "border-green-700",
-        },
+		},
 
 		{
 			title: "Chord Protocol",
@@ -168,23 +198,23 @@ export default function Projects() {
 			cover: "/projects/chord.png",
 			desc: "An F# implementation of the Chord protocol for efficient, scalable distributed hash table (DHT) management.",
 			backgound: "border-green-700",
-        },
-        {
+		},
+		{
 			title: "Gossip Algorithm",
 			tech: [SiFsharp],
 			link: "https://github.com/Sheel-ui/Gossip-Algorithm",
 			cover: "/projects/gossip.png",
 			desc: "A project implementing the gossip algorithm in F# for efficient and reliable information dissemination across distributed systems.",
 			backgound: "border-green-700",
-        },
-        {
+		},
+		{
 			title: "Tree Plantation Algorithms",
 			tech: [SiPython, SiMake],
 			link: "https://github.com/Sheel-ui/Tree-Plantation-Problem",
 			cover: "/projects/dp.jpeg",
 			desc: "This repository contains a collection of different dynamic programing algorithms designed to solve the tree plantation problem.",
 			backgound: "border-green-700",
-        }
+		},
 	];
 	return (
 		<div id="projects" className="pt-10 mt-10 px-5 sm:px-0">
@@ -200,18 +230,21 @@ export default function Projects() {
 							<div
 								className={cn(
 									`border-2 rounded-xl overflow-hidden ${project.backgound}`,
-                                    "bg-black"
+									"bg-black"
 								)}
 							>
 								<DirectionHover
 									imageUrl={project.cover}
 									className="w-full cursor-pointer"
+									imageClassName="opacity-40 sm:opacity-90"
 								>
 									<div className="space-y-2">
 										<h1 className="text-sm font-bold">
 											{project.title}
 										</h1>
-										<p className="text-xs tracking-tighter pr-6">{project.desc}</p>
+										<p className="text-xs tracking-tighter pr-6">
+											{project.desc}
+										</p>
 										<div className="flex items-center gap-5">
 											{project.tech.map((skill, idx) => {
 												const Icon = skill;

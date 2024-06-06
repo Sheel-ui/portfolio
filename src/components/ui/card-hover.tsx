@@ -1,6 +1,5 @@
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
-import Link from "next/link";
 import { useState } from "react";
 import { IconType } from "react-icons";
 
@@ -18,17 +17,19 @@ export const CardHover = ({
 
 	return (
 		<div
-			className={cn(
-				"grid grid-cols-3 md:grid-cols-4  lg:grid-cols-5  py-10",
-				className
-			)}
+			className={cn("grid grid-cols-4  lg:grid-cols-5  py-10", className)}
 		>
 			{items.map((item, idx) => {
 				const Icon = item.icon;
 				return (
 					<div
 						key={idx}
-						className="relative group  block p-2 h-full w-full"
+						className={cn(
+							"relative group block p-2 h-full w-full",
+							{
+								"lg:hidden": idx === 15,
+							}
+						)}
 						onMouseEnter={() => setHoveredIndex(idx)}
 						onMouseLeave={() => setHoveredIndex(null)}
 					>
@@ -53,9 +54,9 @@ export const CardHover = ({
 							)}
 						</AnimatePresence>
 						<div className="rounded-md w-full p-0 overflow-hidden bg-black group-hover:ring-2 ring-green-500 relative z-20 transition-all duration-500">
-							<div className="py-10 z-50 relative space-y-5">
-                                <Icon className="size-6 mx-auto"/>
-								<p className="text-md text-center text-gray-300 font-bold">
+							<div className="py-5 md:py-10 z-50 relative space-y-5">
+								<Icon className="size-5 md:size-6 mx-auto" />
+								<p className="text-sm md:text-md text-center text-gray-300 font-bold">
 									{item.text}
 								</p>
 							</div>
